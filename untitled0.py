@@ -27,6 +27,7 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     if position == 1:
         mean = np.array(frame.shape)
+        print('created mean')
     
     if ret:
         mean = mean + frame
